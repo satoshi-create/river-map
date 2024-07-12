@@ -1,16 +1,16 @@
-import { getPostBySlug } from "../../libs/client";
+// import { getPostBySlug } from "../../libs/client";
 
-export default function sakairiver({ rivermap }) {
-  return <h1>{rivermap.title}</h1>;
-}
+// export default function sakairiver({ rivermap }) {
+//   return <h1>{rivermap.title}</h1>;
+// }
 
-export async function getStaticProps() {
-  const id = "sakai-river";
+// export async function getStaticProps() {
+//   const id = "sakai-river";
 
-  const post = await getPostBySlug(id);
-  return {
-    props: {
-      rivermap: post,
-    },
-  };
-}
+//   const post = await getPostBySlug(id);
+//   return {
+//     props: {
+//       rivermap: post,
+//     },
+//   };
+// }
