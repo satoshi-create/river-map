@@ -1,0 +1,4 @@
+.title {
+  composes: generatorbox from "./modal.module.css";
+  padding: 2rem;
+}

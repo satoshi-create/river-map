@@ -1,0 +1,42 @@
+.footer {
+  background-color: var(--primary-blue-02);
+  height: clamp(12.5rem, 1.666rem + 46.225vw, 31.25rem);
+  margin-top: 60px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  display: grid;
+}
+.copyrigtht {
+  align-self: self-end;
+  font-size: clamp(0.5625rem, 0.3458rem + 0.9245vw, 0.9375rem);
+  line-height: 2rem;
+  color: var(--grey-dark);
+}
+.wrap {
+  background-color: var(--primary-blue-01);
+  z-index: 20;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+.customshapedivider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.customshapedivider svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 118px;
+}
+.customshapedivider path {
+  fill: #ffffff;
+}

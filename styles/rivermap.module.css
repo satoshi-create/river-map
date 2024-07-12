@@ -1,0 +1,136 @@
+/*
+=============== 
+Rivermap
+===============
+*/
+.desc {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: clamp(0.5625rem, 0.4542rem + 0.4622vw, 0.75rem);
+  text-align: center;
+}
+.rivermapbox {
+  display: grid;
+}
+
+.rivermapfigure {
+  display: grid;
+  grid-template-areas: "overlay";
+  margin-bottom: 2rem;
+}
+
+.rivermapfigure > span,
+.rivermapfigure > svg {
+  grid-area: overlay;
+}
+.rivermapfigure > svg {
+  z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .rivermapbox {
+    grid-template-columns: minmax(auto, 600px) auto;
+    grid-template-rows: auto 1fr;
+    justify-self: center;
+    column-gap: 6rem;
+    row-gap: 0;
+  }
+  .desc {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .rivermapfigure {
+    grid-row: 2;
+    margin-bottom: 0;
+  }
+}
+.govermentimages {
+  grid-area: overlay;
+  z-index: 2;
+}
+.govermentimage,
+.basinImage {
+  transition: var(--transition);
+  cursor: pointer;
+}
+.basinImage{
+  fill: rgba(90, 90, 90, 0.377);
+}
+.govermentimage:hover,
+.basinImage:hover {
+  opacity: 0.3;
+}
+.govermentimage text,
+.basinImage text {
+  fill: black;
+  font-family: var(--text-font);
+  font-weight: 900;
+  font-size: clamp(1.25rem, 0.7083rem + 2.3112vw, 2.1875rem);
+}
+
+/* 球磨川 */
+.govermentimage.kuma {
+  fill: rgb(255, 225, 106);
+}
+.govermentimage.hitoyoshi {
+  fill: #ff9595;
+}
+.govermentimage.nishiki {
+  fill: #8b0505;
+}
+.govermentimage.asagiri {
+  fill: #a5f6d3;
+}
+.govermentimage.taraki {
+  fill: #d9ff97;
+}
+.govermentimage.yunomae {
+  fill: #ff61a6;
+}
+.govermentimage.mizukami {
+  fill: #9fffe5;
+}
+.govermentimage.itsuki {
+  fill: #ff7070;
+}
+.govermentimage.yamae {
+  fill: #6ab2c5;
+}
+.govermentimage.yashiro {
+  fill: #7cfe78;
+}
+.govermentimage.ashikita {
+  fill: #1d7d9b;
+}
+.govermentimage.sagara {
+  fill: #c193fe;
+}
+/* 境川 */
+.basinImage.sakai {
+  fill: #c87fff;
+}
+/* .basinImage.sakai path {
+  stroke: #000;
+  stroke-width: 10;
+} */
+.govermentimage.machida {
+  fill: #ede064;
+}
+.govermentimage.sagamihara {
+  fill: #f7ab68;
+}
+.govermentimage.yamato {
+  fill: #e06997;
+}
+.govermentimage.fujisawa {
+  fill: #8c68f7;
+}
+.govermentimage.kamakura {
+  fill: #9affbe;
+}
+.govermentimage.yokohama {
+  fill: #a2ecff;
+}
+/* 滑川 */
+.govermentimage.kamakura {
+  fill: #ff5df4;
+}
