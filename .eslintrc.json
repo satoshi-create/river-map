@@ -3,22 +3,21 @@
 //   "plugins": [["styled-components", { "ssr": true }]]
 // }
 
-
 {
-    "extends": [
-      "next/core-web-vitals",
-        "next/babel"
-    ],
-    "plugins": [
-        [
-            "styled-components",
-            {
-                "ssr": true,
-                "displayName": true,
-                "preprocess": false
-            }
-        ]
+  "extends": [
+    "next/core-web-vitals"
+    // "next/babel"
+  ],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
     ]
+  ]
 }
 
 // {
